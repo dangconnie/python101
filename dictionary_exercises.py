@@ -140,16 +140,9 @@ print count_words("To be or not to be");
 # Given a histogram tally (one returned from either letter_histogram or word_summary), print the top 3 words or letters.
 
 
-def count_words(given_paragraph):
-	more_split = given_paragraph.lower().split();
-	new_dictionary = {};
-	for word in more_split:
-		if word in new_dictionary:
-			# increment counter
-			new_dictionary[word] = new_dictionary[word] + 1;
-		else:
-			# word is not in counter. add it.
-			new_dictionary[word] = 1;
-	print new_dictionary;
+new_dictionary = {'not': 1, 'to': 2, 'or': 1, 'be': 2};
 
-print count_words("To be or not to be");
+for key, value in sorted(new_dictionary.iteritems(), key=lambda (k,v): (v,k), reverse=True):
+    print "%s: %s" % (key, value)
+
+
