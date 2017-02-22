@@ -15,7 +15,7 @@
 # forty_two = 84 / 2;
 # print forty_two;
 
-# forty_two = 83 %2;
+# forty_two = 83 % 2;
 # print forty_two;
 
 
