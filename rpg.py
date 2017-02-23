@@ -1,8 +1,17 @@
+# for stuff that every class has (like health and attack), put it in the parent so that every child class can inherit it. do this when you are typing the same thing over and over.
+# if you have stuff that only applies to certain classes, don't do this. For example, if goblin has a specific attack(like steal), only put it in the goblin class.
+
+
 from rpg_hero import Hero;
 from rpg_monsters import Goblin;
 
 
 hero = Hero();
+# list_of_all_enemy_classes = ["bats", "dogs", "frogs"]
+# print "How many enemies do you want to fight?"
+# how_many_enemies = raw_input();
+# for i in range(0,how_many_enemies):
+# generate a random enemy class. append this random to enemies
 enemies = [Goblin()];
 
 for enemy in enemies:
